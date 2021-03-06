@@ -120,6 +120,7 @@ body {
   padding: 24px 0;
   grid-column: 1 / -1;
   grid-row: 5 / span 1;
+  align-self: center;
 }
 
 .intro__social__item {
@@ -151,6 +152,7 @@ body {
 
   .intro__info {
     grid-row: 3 / 4;
+    align-self: end;
   }
 
   .intro__info__heading {
@@ -171,6 +173,8 @@ body {
     padding: 0;
     grid-column: -2 / -1;
     grid-row: 2 / span 4;
+    justify-self: center;
+    align-self: end;
   }
 
   .intro__social__item {
@@ -180,12 +184,15 @@ body {
 
 @media (min-width: 1024px) {
   .intro {
+    grid-template-rows: repeat(2, 1fr) 100px;
   }
 
   .intro__heading {
     font-size: 3vw;
     margin: 44px 0;
     padding: 0;
+    grid-column: 2 / span 2;
+    align-self: end;
   }
 
   .intro__heading__jumbo {
@@ -194,6 +201,8 @@ body {
 
   .intro__info {
     padding: 50px 280px 50px 100px;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
   }
 
   .intro__info__content {
@@ -201,10 +210,16 @@ body {
   }
 
   .intro__img {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 3;
   }
 
   .intro__social {
     flex-direction: row;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    align-self: center;
+    justify-self: start;
   }
 
   .intro__social__item {
